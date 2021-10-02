@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins.ttf);
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Poppins;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    margin-left: 30px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px ;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background:#1b9bff;
+    transition:.5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 768px){
+    label.logo{
+        font-size: 30px;
+        padding-left:10px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ul{
+        left: 0;
+    }
+}
+.row::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      [class*="col-"] {
+         width: 100%;
+         float: left;
+      }
+@media only screen and (min-width: 480px) {
+    .col-md-1 { width: 8.33333333% }
+    .col-md-2 { width: 16.66666667% }
+    .col-md-3 { width: 25% }
+    .col-md-4 { width: 33.33333333% }
+    .col-md-5 { width: 41.66666667% }
+    .col-md-6 { width: 50% }
+    .col-md-7 { width: 58.33333333% }
+    .col-md-8 { width: 66.66666667% }
+    .col-md-9 { width: 75% }
+    .col-md-10 { width: 83.33333333% }
+    .col-md-11 { width: 91.66666667% }
+    .col-md-12 { width: 100% }
+ }
+ @media only screen and (min-width: 768px) {
+    .col-l-1 { width: 8.33333333% }
+    .col-l-2 { width: 16.66666667% }
+    .col-l-3 { width: 25% }
+    .col-l-4 { width: 33.33333333% }
+    .col-l-5 { width: 41.66666667% }
+    .col-l-6 { width: 50%;}
+    .col-l-7 { width: 58.33333333% }
+    .col-l-8 { width: 66.66666667% }
+    .col-l-9 { width: 75% }
+    .col-l-10 { width: 83.33333333% }
+    .col-l-11 { width: 91.66666667% }
+    .col-l-12 { width: 100% }
+    text p{
+      padding: 30px;
+    }
+    .container h2{text-align: center}
+ }
+.container img{
+ width: 100%;
+ padding: 10px 20px;
+}
+.intro{
+  margin:10px 10px 40px 10px;
+}
+.intro h1{
+  text-align: center;
+}
+.intro p{
+  font-size: 18px;
+  text-align: center;
+}
+.container h2{
+  padding-left: 20px;
+}
+text{
+  display: block;
+}
+text p{
+  padding:10px 20px 40px 20px;
+  font-size: 20px;
+  font-weight: 450;
+}
+.pizza,.hum{
+  height: 240px;
+}
+footer{
+  background: #2c3e50;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+footer a{
+  color: white;
+}
+.icon{
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+  letter-spacing: 10px;
+}
